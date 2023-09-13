@@ -14,3 +14,7 @@ services:
       - /var/cache/bind:/var/cache/bind
       - /var/lib/bind:/var/lib/bind
     restart: always
+
+
+    ## set /etc/systemd/resolved.conf to DNSStubListener=no
+    ## sudo systemctl restart systemd-resolved
