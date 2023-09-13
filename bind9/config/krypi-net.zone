@@ -1,0 +1,32 @@
+$TTL 5d
+
+$ORIGIN krypi.net.
+
+@                           IN          SOA         ns.krypi.net. k.axelsund.hotmail.com. (
+                                                    20230913        ;serial
+                                                    12h             ;refresh
+                                                    15m             ;retry
+                                                    3w              ;expire
+                                                    2h              ;mini TTL
+                                                    )
+
+                            IN          NS          ns.krypi.net.
+ns                          IN          A           172.20.97.75
+
+
+; -- add dns records below
+; -- infra
+sexy-mgmt.krypi.net         IN          A           172.20.42.1
+alp01-vcsa-mgmt.krypi.net   IN          A           172.20.42.2
+edgy-mgmt.krypi.net         IN          A           172.20.42.3
+plenty-mgmt.krypi.net       IN          A           172.20.42.4
+switchy-mgmt.krypi.net      IN          A           172.20.42.5
+nasty-mgmt.krypi.net        IN          A           172.20.42.6
+
+; -- servers
+
+
+; -- apps
+
+; -- home
+
