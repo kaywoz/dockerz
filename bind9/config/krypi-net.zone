@@ -24,7 +24,7 @@ switchy-mgmt.krypi.net      IN          A           172.20.42.5
 nasty-mgmt.krypi.net        IN          A           172.20.42.6
 
 ; -- servers
-
+*.dld01-infra-services      IN          A           172.20.97.75
 
 ; -- apps
 
