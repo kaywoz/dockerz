@@ -1,0 +1,20 @@
+---
+services:
+  bind9:
+    image: ubuntu/bind9:latest
+    container_name: {placeholder}
+    environment: 
+         - BIND9_USER=root
+         - TZ=Europe/Stockholm
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+    volumes:
+      - ./config:/etc/bind/
+      - ./cache:/var/cache/bind
+      - ./records:/var/lib/bind
+    restart: always
+
+
+    ## set /etc/systemd/resolved.conf to DNSStubListener=no
+    ## sudo systemctl restart systemd-resolved

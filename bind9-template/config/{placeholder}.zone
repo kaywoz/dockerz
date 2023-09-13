@@ -1,0 +1,32 @@
+$TTL 5d
+
+$ORIGIN {domain-placeholder.}
+
+@                           IN          SOA         {ns-placeholder.}. {email.placeholder.} (
+                                                    20230913        ;serial
+                                                    12h             ;refresh
+                                                    15m             ;retry
+                                                    3w              ;expire
+                                                    2h              ;mini TTL
+                                                    )
+
+                            IN          NS          {ns-placeholder.}.
+ns                          IN          A           {ns-ip}
+
+
+; -- add dns records below
+; -- infra
+{hostname-placeholder}       IN          A           {ip}
+{hostname-placeholder}       IN          A           {ip}
+{hostname-placeholder}       IN          A           {ip}
+{hostname-placeholder}       IN          A           {ip}
+{hostname-placeholder}       IN          A           {ip}
+{hostname-placeholder}       IN          A           {ip}
+
+; -- servers
+*.{wildcard}      IN          A           {ip}
+
+; -- apps
+
+; -- home
+
